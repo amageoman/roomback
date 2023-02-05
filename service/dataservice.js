@@ -210,8 +210,9 @@ roomdetails=(email)=>{
 
 
 deleteroom=(index,email)=>{
-return db.User.findOne({email}).then(data=>{
     var index=parseInt(index)
+return db.User.findOne({email}).then(data=>{
+    
     if(data){
 
         
